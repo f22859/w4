@@ -32,7 +32,7 @@ function result() {
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = `${Math.round(300*0.0714286)} stone`;
+    const weight = `${Math.round(150*0.0714286)} stone`;
     const temperature =  `${Math.round((94-32) * 5 / 9)} centigrade`;
     newStory = newStory.replace('華氏　９４度', temperature);
     newStory = newStory.replace('150　ポンド', weight);
