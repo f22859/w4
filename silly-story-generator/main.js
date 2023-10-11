@@ -32,15 +32,11 @@ function result() {
   }
 
   if (document.getElementById("uk").checked) {
-    const weight = `${weight}キログラム`;
-    const temperature = `摂氏${temperature}度`;
-  } else {
-    weight = `${Math.round(weight*2.2046)}ポンド`;
-    temperature = `華氏${Math.round(temperature*1.8+32)}度`;
+    const weight = `${Math.round(300*0.0714286)} kg`;
+    const temperature =  `${Math.round((94-32) * 5 / 9)}　　度`;
+    newStory = newStory.replace('華氏　９４度', temperature);
+    newStory = newStory.replace('150　ポンド', weight);
   }
-  
-
-
 
   
   story.textContent = newStory;
